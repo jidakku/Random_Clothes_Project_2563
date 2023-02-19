@@ -1,0 +1,69 @@
+function typeOfActFemale(activity, shape, skin) {
+    switch (activity) {
+        case "atHome":
+            dressesAct = ["a-line", "babydoll", "blouson", "bodycon", "halterneck", "maxi", "mini", "peplum", "sheath", "shift", "shirt", "skater", "slip", "tent", "wrap"];
+            sleeveAct = ["แขนสั้น", "แขนยาว", "แขนกุด"];
+            shirtAct = ["ครอป", "ยืด", "รัดรูป", "เกาะอก"];
+            pantsAct = [  "cutoffs", "เอวสูง", "peg", "ขาบาน", "กระบอก", "ขาม้า", "พอดีตัว", "หลวม"];
+            overcoatAct = [ "ครอบ-คาร์ดิแกน", "เสื้อกั๊ก", "เสื้อคาร์ดิแกน"];
+            skirtAct = ["ทรงกลม", "ทรงพลีท", "ทรงเทนนิส"];
+            collarAct = ["คอกลม", "คอเต่า", "คอวี", "เปิดไหล่", "คอเหลี่ยม", "เกาะอก", "สายเดี่ยว"];
+            lengthAct = ["สั้น", "ยาว"];
+            typeOfShapeFemale(shape, dressesAct, sleeveAct, shirtAct, pantsAct, overcoatAct, skirtAct, collarAct, lengthAct, skin);
+            break;
+        case "outside":
+            dressesAct = ["a-line", "babydoll", "blouson", "bodycon", "halterneck", "maxi", "mini", "peplum", "sheath", "shift", "shirt", "skater", "slip", "tent", "wrap"];
+            sleeveAct = ["แขนสั้น", "แขนยาว", "แขนกุด"];
+            shirtAct = ["ครอป", "เชิ้ต", "ยืด", "รัดรูป"];
+            pantsAct = ["bermuda", "biker", "cutoffs", "เอวสูง", "ยีนส์", "bell", "boot", "peg", "ขาบาน", "ยีนส์", "กระบอก", "ขาม้า", "พอดีตัว", "หลวม"];
+            overcoatAct = ["bomber", "pea", "trench", "ครอบ-คาร์ดิแกน", "แจ็คเก็ตยีนส์", "แจ็คเก็ตหนัง", "เสื้อกั๊ก", "เสื้อขนแกะ", "เสื้อคาร์ดิแกน", "เสื้อทรงสูท"];
+            skirtAct = ["ทรงกลม", "ทรงเจ้าหญิง", "ทรงพลีท", "ทรงเอ", "ทรงเทนนิส"];
+            collarAct = ["คอกลม", "คอเต่า", "คอวี", "เปิดไหล่", "คอเหลี่ยม", "เกาะอก", "สายเดี่ยว"];
+            lengthAct = ["สั้น", "ยาว"];
+            typeOfShapeFemale(shape, dressesAct, sleeveAct, shirtAct, pantsAct, overcoatAct, skirtAct, collarAct, lengthAct, skin);
+            break;
+        case "work":
+            dresses = [ "midi", "shirt", "belted"];
+            sleeveAct = ["แขนสั้น", "แขนยาว"];
+            shirtAct = [ "เชิ้ต", "ยืด"];
+            pantsAct = ["bermuda", "เอวสูง", "ยีนส์", "boot", "peg", "ขาบาน", "ยีนส์", "กระบอก", "ขาม้า", "หลวม"];
+            overcoatAct = ["bomber", "pea", "trench", "ครอบ-คาร์ดิแกน", "แจ็คเก็ตยีนส์", "แจ็คเก็ตหนัง", "เสื้อกั๊ก", "เสื้อคาร์ดิแกน", "เสื้อทรงสูท"];
+            skirtAct = ["ทรงกลม", "ทรงพลีท", "ทรงเอ"];
+            collarAct = ["คอกลม", "คอเต่า", "คอวี", "คอเหลี่ยม"];
+            lengthAct = ["สั้น", "ยาว"];
+            typeOfShapeFemale(shape, dressesAct, sleeveAct, shirtAct, pantsAct, overcoatAct, skirtAct, collarAct, lengthAct, skin);
+            break;
+        case "exercise":
+            shirtColor = colorOfSkin(skin);
+            clothsPath1 = typeClothPath + "เสื้อ/ออกกำลังกาย/" + shirtColor;
+            pantsColor = colorOfSkin(skin);
+            clothsPath2 = typeClothPath + "เสื้อ/ออกกำลังกาย/" + pantsColor;
+            pathArray = [clothsPath1, clothsPath2];
+            displayResult(pathArray);
+            break;
+        case "travel":
+            dressesAct = ["a-line", "babydoll", "blouson", "bodycon", "halterneck", "maxi", "mini", "peplum", "sheath", "shift", "shirt", "skater", "slip", "tent", "wrap"];
+            sleeveAct = ["แขนสั้น", "แขนยาว", "แขนกุด"];
+            shirtAct = ["ครอป", "เชิ้ต", "ยืด", "รัดรูป"];
+            pantsAct = ["bermuda", "biker", "cutoffs", "เอวสูง", "ยีนส์", "bell", "boot", "peg", "ขาบาน", "ยีนส์", "กระบอก", "ขาม้า", "พอดีตัว", "หลวม"];
+            overcoatAct = ["bomber", "pea", "trench", "ครอบ-คาร์ดิแกน", "แจ็คเก็ตยีนส์", "แจ็คเก็ตหนัง", "เสื้อกั๊ก", "เสื้อขนแกะ", "เสื้อคาร์ดิแกน", "เสื้อทรงสูท"];
+            skirtAct = ["ทรงกลม", "ทรงเจ้าหญิง", "ทรงพลีท", "ทรงเอ", "ทรงเทนนิส"];
+            collarAct = ["คอกลม", "คอเต่า", "คอวี", "เปิดไหล่", "คอเหลี่ยม", "เกาะอก", "สายเดี่ยว"];
+            lengthAct = ["สั้น", "ยาว"];
+            typeOfShapeFemale(shape, dressesAct, sleeveAct, shirtAct, pantsAct, overcoatAct, skirtAct, collarAct, lengthAct, skin);
+            break;
+        case "party":
+            dressesAct = ["a-line", "babydoll", "blouson", "bodycon", "halterneck", "maxi", "mini", "peplum", "sheath", "shift", "shirt", "skater", "slip", "tent", "wrap"];
+            sleeveAct = ["แขนสั้น", "แขนยาว", "แขนกุด"];
+            shirtAct = ["ครอป", "เชิ้ต", "ยืด", "รัดรูป"];
+            pantsAct = ["bermuda", "biker", "cutoffs", "เอวสูง", "ยีนส์", "bell", "boot", "peg", "ขาบาน", "ยีนส์", "กระบอก", "ขาม้า", "พอดีตัว", "หลวม"];
+            overcoatAct = ["bomber", "pea", "trench", "ครอบ-คาร์ดิแกน", "แจ็คเก็ตยีนส์", "แจ็คเก็ตหนัง", "เสื้อกั๊ก", "เสื้อขนแกะ", "เสื้อคาร์ดิแกน", "เสื้อทรงสูท"];
+            skirtAct = ["ทรงกลม", "ทรงเจ้าหญิง", "ทรงพลีท", "ทรงเอ", "ทรงเทนนิส"];
+            collarAct = ["คอกลม", "คอเต่า", "คอวี", "เปิดไหล่", "คอเหลี่ยม", "เกาะอก", "สายเดี่ยว"];
+            lengthAct = ["สั้น", "ยาว"];
+            typeOfShapeFemale(shape, dressesAct, sleeveAct, shirtAct, pantsAct, overcoatAct, skirtAct, collarAct, lengthAct, skin);
+            break;
+        default:
+            break;
+    }
+}

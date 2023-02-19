@@ -1,0 +1,232 @@
+.navbar {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(142, 20, 140);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list li {
+    margin: 0 1rem;
+}
+
+.list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 60px 100px;
+    display: flex;
+    color: black;
+    background-color: white;
+
+}
+
+.example {
+    margin-top: 25px;
+    width: 40%;
+    text-align: center;
+}
+
+.choice {
+    width: 100%;
+    display: flex;
+    margin: 50px 0px 10px 20px;
+}
+
+.line1 p {
+    margin: 20px 0px 0px 50px;
+}
+
+.genderPicture {
+    display: flex;
+    margin: 0 2rem;
+    text-align: center;
+    margin: 20px 0px 0px 80px;
+}
+
+.genderPicture img {
+    display: flex;
+    margin: 0 1rem;
+}
+
+.line2 p {
+    margin: 20px 0px 0px 35px;
+}
+
+.skinPicture {
+    display: flex;
+    margin: 0 1rem;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+}
+
+.skinPicture img {
+    display: flex;
+    margin: 0 0.2rem;
+}
+
+.next button {
+    width: 40%;
+    background-color: rgb(40, 70, 220);
+    border: 2px solid rgb(40, 70, 220);
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+    padding: 16px 30px;
+    text-decoration: none;
+    margin: 20px 0px 20px 255px;
+    cursor: pointer;
+}
+
+.line3 p {
+    margin: 40px 0px 0px 155px;
+}
+
+.picture {
+    display: flex;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.picture img {
+    display: flex;
+    margin: 0 0.8rem;
+}
+
+.line4 p {
+    margin: 30px 0px 0px 105px;
+}
+
+.typePicture {
+    display: flex;
+    margin: 0 2rem;
+    text-align: center;
+    margin: 0px 0px 0px 80px;
+}
+
+.typePicture img {
+    display: flex;
+    margin: 0 1rem;
+}
+
+.line5 p {
+    margin: 20px 0px 0px 145px;
+}
+
+.activityPicture {
+    display: flex;
+    margin: 0 2rem;
+    margin: 0px 0px 0px 100px;
+    text-align: center;
+}
+
+.activityPicture img {
+    display: flex;
+    margin: 0 2rem;
+}
+
+.submit button {
+    width: 20%;
+    background-color: rgb(40, 70, 220);
+    border: 2px solid rgb(40, 70, 220);
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 0px 50px 115px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.text h4 {
+    color: rgb(121, 121, 121);
+}
+
+.submit {
+    display: flex;
+    margin: 0 2rem;
+    margin: 40px 0px 0px 220px;
+}
+
+.footer {
+    background-color: #686565bb;
+}
+
+.footer p {
+    color: rgb(181, 171, 171);
+    text-align: center;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.wetech {
+    margin: 0px 100px 0px 50px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.link li {
+    margin: 0 5rem;
+}
+
+.link li a {
+    color: black;
+    text-decoration: none;
+}
+.button button{
+    width: 15%;
+    background-color: rgb(40, 70, 220);
+    border: 2px solid rgb(40, 70, 220);
+    border-radius: 12px;
+    padding: 2px;
+    color: white;
+    padding: 8px 15px;
+    margin: 0px 0px 30px 0px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.result {
+    width: 100%;
+    text-align: center;
+}
+

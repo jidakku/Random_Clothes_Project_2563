@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        YourLook
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <script type="text/javascript" src="js/Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+
+
+<body>
+    <section class="navbar">
+        <div class="logo">
+            <h1>
+                YourLook
+            </h1>
+        </div>
+        <div class="list">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </div>
+    </section>
+    <div class="main">
+        <div class="topic">
+            <div class="choice">
+                <div class="text">
+                    <h3>
+                        Step 3
+                    </h3>
+                    <h4>
+                        choose your shape
+                    </h4>
+                </div>
+                <div class="line3">
+                    <div class="picture">
+                        <div class="form">
+                            <img src="img/triangle.jpg" alt="triangle" height="240" width="100">
+                            <input type="radio" id="triangle" name="shapeMale" value="triangle">
+                            <label for="triangle">Triangle</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/trapezoid.jpg" alt="trapezoid" height="240" width="100">
+                            <input type="radio" id="trapezoid" name="shapeMale" value="trapezoid">
+                            <label for="trapezoid">Trapezoid</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/inverd_tri.jpg" alt="inverd" height="240" width="100">
+                            <input type="radio" id="inverd" name="shapeMale" value="inverd">
+                            <label for="inverd">Inverted</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/oval.jpg" alt="oval" height="240" width="100">
+                            <input type="radio" id="oval" name="shapeMale" value="oval">
+                            <label for="oval">Oval</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/rectangle_man.jpg" alt="rectangle" height="240" width="100">
+                            <input type="radio" id="rectangle" name="shapeMale" value="rectangle">
+                            <label for="rectangle">Rectangle</label><br>
+                        </div>
+                    </div>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+
+            <div class="choice">
+                <div class="text">
+                    <h3>
+                        Step 4
+                    </h3>
+                    <h4>
+                        choose your clothing type
+                    </h4>
+                </div>
+                <div class="line4">
+                    <div class="typePicture">
+                        <div class="form">
+                            <img src="img/casual.jpg" alt="casual" height="170" width="120">
+                            <input type="radio" id="casual" name="type" value="casual">
+                            <label for="casual">Casual</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/formal.jpg" alt="formal" height="170" width="120">
+                            <input type="radio" id="formal" name="type" value="formal">
+                            <label for="formal">Formal</label><br>
+                        </div>
+                        <div class="form">
+                            <img src="img/Fashion.jpg" alt="fashion" height="170" width="120">
+                            <input type="radio" id="fashion" name="type" value="fashion">
+                            <label for="fashion">Fashion</label><br>
+                        </div>
+                    </div>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+            <div class="choice">
+                <div class="text">
+                    <h3>
+                        Step 5
+                    </h3>
+                    <h4>
+                        choose your activity
+                    </h4>
+                </div>
+                <div class="line5">
+                    <div class="picture2">
+                        <div class="activityPicture">
+                            <div class="form">
+                                <img src="img/inside.jpg" alt="atHome" height="100" width="100">
+                                <input type="radio" id="atHome" name="activity" value="atHome">
+                                <label for="atHome">At home</label><br>
+                                <br>
+                                <img src="img/exercise.jpg" alt="exercise" height="100" width="100">
+                                <input type="radio" id="exercise" name="activity" value="exercise">
+                                <label for="exercise">Exercise</label><br>
+                            </div>
+                            <div class="form">
+                                <img src="img/outside.jpg" alt="outside" height="100" width="100">
+                                <input type="radio" id="outside" name="activity" value="outside">
+                                <label for="outside">Outside</label><br>
+                                <br>
+                                <img src="img/travel.jpg" alt="travel" height="100" width="100">
+                                <input type="radio" id="travel" name="activity" value="travel">
+                                <label for="travel">Travel</label><br>
+                            </div>
+                            <div class="form">
+                                <img src="img/work.jpg" alt="work" height="100" width="100">
+                                <input type="radio" id="work" name="activity" value="work">
+                                <label for="work">Work</label><br>
+                                <br>
+                                <img src="img/party.jpg" alt="party" height="100" width="100">
+                                <input type="radio" id="party" name="activity" value="party">
+                                <label for="party">Party</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+            <div class="submit">
+                <button onclick ="location.href = 'Page1.html';">Back</button>
+                <button onclick="secondPage();">Find Now</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<footer class="footer">
+    <p>_________________________________________________________________________________________________________________________________</p>
+    <div class="footerText">
+        <div class="wetech">
+            <h1>
+                Wetech
+            </h1>
+        </div>
+        <div class="linkContact">
+            <div class="link">
+                <li><a href="Page1.html">Home</a></li>
+                <li><a href="About.html">Facebook</a></li>
+                <li><a href="Contact.html">Twitter</a></li>
+            </div>
+            <br>
+            <div class="link">
+                <li><a href="About.html">About</a></li>
+                <li><a href="About.html">Instagrams</a></li>
+                <li><a href="Contact.html">Email</a></li>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

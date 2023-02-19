@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script>
+    var folder;
+    function name(params) {
+      folder = "img" + "/";
+      displayImage(folder);
+      displayImage1(folder);
+    }
+    function displayImage(folder) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", folder, true);
+      xhr.responseType = "document";
+
+      xhr.onload = function () {
+        var images = xhr.responseXML.getElementsByTagName("a");
+        var imageArray = [];
+        for (var i = 0; i < images.length; i++) {
+          if (images[i].href.match(/\.(jpeg|jpg|gif|png)$/)) {
+            imageArray.push(images[i].href);
+          }
+        }
+        var randomImage = imageArray[Math.floor(Math.random() * imageArray.length)];
+        document.getElementById("randomImage0").src = randomImage;
+      }; xhr.send();
+
+    }
+    function displayImage1(folder) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", folder, true);
+      xhr.responseType = "document";
+
+      xhr.onload = function () {
+        var images = xhr.responseXML.getElementsByTagName("a");
+        var imageArray = [];
+        for (var i = 0; i < images.length; i++) {
+          if (images[i].href.match(/\.(jpeg|jpg|gif|png)$/)) {
+            imageArray.push(images[i].href);
+          }
+        }
+        var randomImage = imageArray[Math.floor(Math.random() * imageArray.length)];
+        document.getElementById("randomImage1").src = randomImage;
+      }; xhr.send();
+
+    }
+
+    //----------------------------------------------------------------------------------------
+    function sameVariable(a) {
+      var b = [];
+      var sameVar = []
+      for (var i = 0; i < a.length; i++) {
+        if (b.indexOf(a[i]) < 0) {
+          b.push(a[i]);
+        } else {
+          sameVar.push(a[i]);
+        }
+      }
+      var random = sameVar[Math.floor(Math.random() * sameVar.length)];
+      return random;
+    }
+    var myarr = ["a", "b", "c", "e", "d", "a"];
+    var e = ["r", "c", "d"];
+    var x = myarr.concat(e);
+
+    //-----------------------------------------------------
+    function randomDresses(d) {
+      var dresses = sameVariable(d);
+      switch (dresses) {
+        case "a-line":
+          return "เดรส/a-line/";
+        case "babydoll":
+          return "เดรส/babydoll/";
+        case "blouson":
+          return "เดรส/blouson/";
+        case "bodycon":
+          return "เดรส/bodycon/";
+        case "halterneck":
+          return "เดรส/halterneck/";
+        case "maxi":
+          return "เดรส/maxi/";
+        case "mini":
+          return "เดรส/mini/";
+        case "peplum":
+          return "เดรส/peplum/";
+        case "sheath":
+          return "เดรส/sheath/";
+        case "shift":
+          return "เดรส/shift/";
+        case "shirt":
+          return "เดรส/shirt/";
+        case "skater":
+          return "เดรส/skater/";
+        case "slip":
+          return "เดรส/slip/";
+        case "tent":
+          return "เดรส/tent/";
+        case "wrap":
+          return "เดรส/wrap/";
+        default:
+          break;
+      }
+    }
+    var d = ["a-line", "slip", "slip"]
+    function tt() {
+      var t = randomShirt(allSleeve, allShirt, allcollar);
+      console.log(t);
+    }
+    var allSleeve = ["แขนสั้น", "แขนยาว", "แขนสั้น"];
+    var allcollar = ["คอกลม", "คอเหลี่ยม", "คอกลม"];
+    var allShirt = ["ครอป", "ครอป", "ยืด"];
+    function randomShirt(allSleeve, allShirt, allcollar) {
+      var sleeveRandom = sameVariable(allSleeve);
+      console.log(sleeveRandom);
+      switch (sleeveRandom) {
+        case "แขนสั้น":
+          var shirtRandom = sameVariable(allShirt);
+          switch (shirtRandom) {
+            case "ครอป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนสั้น/ครอป/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนสั้น/ครอป/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนสั้น/ครอป/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนสั้น/ครอป/เปิดไหล่/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนสั้น/ครอป/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            case "เชิ้ต":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "ปกติ":
+                  return "เสื้อ/แขนสั้น/เชิ้ต/ปกติ/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนสั้น/เชิ้ต/เปิดไหล่/";
+                default:
+                  break;
+              }
+              break;
+            case "ยืด":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอเต่า":
+                  return "เสื้อ/แขนสั้น/ยืด/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนสั้น/ยืด/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนสั้น/ยืด/เปิดไหล่/";
+                case "คอกลม":
+                  return "เสื้อ/แขนสั้น/ยืด/คอกลม/";
+                default:
+                  break;
+              }
+              break;
+            case "รัดรูป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนสั้น/รัดรูป/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนสั้น/รัดรูป/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนสั้น/รัดรูป/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนสั้น/รัดรูป/เปิดไหล่/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนสั้น/รัดรูป/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            default:
+              break;
+          }
+          break;
+        case "แขนยาว":
+          var shirtRandom = sameVariable(allShirt);
+          switch (shirtRandom) {
+            case "ครอป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนยาว/ครอป/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนยาว/ครอป/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนยาว/ครอป/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนยาว/ครอป/เปิดไหล่/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนยาว/ครอป/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            case "เชิ้ต":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "ปกติ":
+                  return "เสื้อ/แขนยาว/เชิ้ต/ปกติ/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนยาว/เชิ้ต/เปิดไหล่/";
+                default:
+                  break;
+              }
+              break;
+            case "ยืด":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอเต่า":
+                  return "เสื้อ/แขนยาว/ยืด/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนยาว/ยืด/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนยาว/ยืด/เปิดไหล่/";
+                case "คอกลม":
+                  return "เสื้อ/แขนยาว/ยืด/คอกลม/";
+                default:
+                  break;
+              }
+              break;
+            case "รัดรูป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนยาว/รัดรูป/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนยาว/รัดรูป/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนยาว/รัดรูป/คอวี/";
+                case "เปิดไหล่":
+                  return "เสื้อ/แขนยาว/รัดรูป/เปิดไหล่/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนยาว/รัดรูป/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            default:
+              break;
+          }
+          break;
+        case "แขนกุด":
+          var shirtRandom = sameVariable(allShirt);
+          switch (shirtRandom) {
+            case "เกาะอก":
+              return "เสื้อ/แขนกุด/เกาะอก/";
+            case "ครอป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนกุด/ครอป/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนกุด/ครอป/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนกุด/ครอป/คอวี/";
+                case "สายเดี่ยว":
+                  return "เสื้อ/แขนกุด/ครอป/สายเดี่ยว/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนกุด/ครอป/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            case "เชิ้ต":
+              return "เสื้อ/แขนกุด/เชิ้ต/";
+            case "ยืด":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนกุด/ยืด/คอกลม/";
+                case "คอเต่า":
+                  return "เสื้อ/แขนกุด/ยืด/คอเต่า/";
+                case "คอวี":
+                  return "เสื้อ/แขนกุด/ยืด/คอวี/";
+                case "สายเดี่ยว":
+                  return "เสื้อ/แขนกุด/ยืด/สายเดี่ยว/";
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนกุด/ยืด/คอเหลี่ยม/";
+                default:
+                  break;
+              }
+              break;
+            case "รัดรูป":
+              var collarRandom = sameVariable(allcollar);
+              switch (collarRandom) {
+                case "คอกลม":
+                  return "เสื้อ/แขนกุด/รัดรูป/คอกลม/"
+                case "คอเต่า":
+                  return "เสื้อ/แขนกุด/รัดรูป/คอเต่า/"
+                case "คอวี":
+                  return "เสื้อ/แขนกุด/รัดรูป/คอวี/"
+                case "สายเดี่ยว":
+                  return "เสื้อ/แขนกุด/รัดรูป/สายเดี่ยว/"
+                case "คอเหลี่ยม":
+                  return "เสื้อ/แขนกุด/รัดรูป/คอเหลี่ยม/"
+                default:
+                  break;
+              }
+              break;
+            default:
+              break;
+          }
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</head>
+
+<body onload="name()">
+  
+  <img id="randomImage0" alt="Random Image">
+  <img id="randomImage1" alt="Random Image">
+  <img id="randomImage2" alt="Random Image">
+</body>
+
+</html>
