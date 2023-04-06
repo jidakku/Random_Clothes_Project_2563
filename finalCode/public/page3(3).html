@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <script type="text/javascript" src="js/Script.js"></script>
+</head>
+
+<body onload="result()">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">YourLook</a>  
+         </div>
+         <a href="Page1.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">More
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="Skin.html">Clothing for skin tones</a>
+                <a href="FemaleAct.html">Women's clothing for activities</a>
+                <a href="MaleAct.html">Men's clothing for activities</a>
+                <a href="FemaleShape.html">Women's clothing for body shapes</a>
+                <a href="MaleShape.html">Men's clothing for body shapes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="result">
+            <h2>
+                Now! We find your outfit.
+            </h2>
+            <br>
+            <div class="randomImage">
+                <img id="randomImage1" alt="Random Image" height="250" width="200">
+                <img id="randomImage2" alt="Random Image" height="250" width="200">
+                <img id="randomImage3" alt="Random Image" height="250" width="200">
+            </div>
+            <br>
+            <br>
+            <div class="button">
+                <div class="button">
+                    <button onclick="window.history.back();">Back</button>
+                    <button onclick="newResult()">Next</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<footer class="footer">
+    <p>_________________________________________________________________________________________________________________________________
+    </p>
+    <div class="footerText">
+        <div class="wetech">
+            <h1>
+                Wetech
+            </h1>
+        </div>
+        <div class="linkContact">
+            <div class="link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Facebook</a></li>
+                <li><a href="Contact.html">Twitter</a></li>
+            </div>
+            <br>
+            <div class="link">
+                <li><a href="About.html">About</a></li>
+                <li><a href="About.html">Instagrams</a></li>
+                <li><a href="Contact.html">Email</a></li>
+            </div>
+        </div>
+    </div>
+</footer>

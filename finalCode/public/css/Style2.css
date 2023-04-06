@@ -1,0 +1,131 @@
+.main2 {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    height: auto !important;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 3%;
+    margin: 30px 80px;
+    display: flex;
+    color: black;
+    background-color: white;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .8);
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, .8);
+}
+
+.main2 p{
+    font-size: 16px;
+    margin: 1.2% 5%;
+    text-align: center;
+}
+.home{
+    background-image: url("../img/พื้นหลัง2.png");
+    background-repeat: no-repeat;
+}
+.navbar1{
+    padding: 0.1%;
+    text-align: center;
+}
+.logo1 p{
+    color: rgb(35, 34, 34);
+    text-shadow: 5px 5px rgb(234, 153, 153);
+    font-family: cursive;
+    font-size: 80px;
+    font-variant: small-caps;
+    font-weight: 1000;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+.logo2 p{
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 1px 1px rgb(234, 153, 153);
+    font-size: 20px;
+    font-weight: 520;
+    margin-top: 6%;
+}
+.button1{
+    font-family: Georgia, serif;
+    background-color: rgb(237, 234, 234);
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    margin: 2% 38%;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .8);
+    box-shadow: 0px 30px 50px rgb(92, 44, 44);
+}
+.button1 p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(45, 42, 42);
+}
+.button1 button{
+    font-size: 16px;
+    font-weight: 520;
+}
+.start button{
+    margin: 0.1% 5%;
+    background-color: rgb(29, 76, 232);
+    border: 2px solid rgb(6, 14, 169);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+}
+.login{
+    color: #000;
+}
+.container{
+    text-align: left;
+}
+
+.title h2{
+    text-align: center;
+}
+
+.pictureTopic {
+    text-align: center;
+}
+.pictureTopic img{
+    margin-top: 3%;
+}
+.pictureTopic h3{
+    margin-top: 0px;
+}
+.document5 h2{
+    margin-top: 5%;
+    color: rgb(62, 6, 115);
+}
+
+.Should h3{
+    color: rgb(55, 21, 224);
+    text-align: center;
+    margin-top: 4%;
+}
+.Should p{
+    color: rgb(54, 35, 146);
+    text-align: center;
+    
+}
+.Shouldn’t h3{
+    color: rgb(199, 12, 12);
+    text-align: center;
+    margin-top: 4%;
+}
+.Shouldn’t p{
+    color: rgb(93, 15, 54);
+    text-align: center;
+    
+}
+.homeImg{
+    margin-left: 30%;
+    display: flex;
+}
+.homeImg img{
+    border-radius: 80px;
+    padding: 0px;
+    margin: 0 -1rem;
+}
+
